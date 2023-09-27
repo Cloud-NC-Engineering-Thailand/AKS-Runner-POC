@@ -27,31 +27,5 @@ resource "azurerm_kubernetes_cluster" "aks" {
   }
 }
 
-# resource "azurerm_kubernetes_cluster" "aks" {
-#   name                = "pimAKScluster"
-#   location            = azurerm_resource_group.rg.location
-#   resource_group_name = azurerm_resource_group.rg.name
-#   dns_prefix          = "${var.aks_name}-dns"
 
-#   default_node_pool {
-#     name       = "default"
-#     vm_size    = "Standard_D2_v2"
-#     node_count = 1
-
-#   }
-#   network_profile {
-#     network_plugin     = "azure"
-#     service_cidr       = azurerm_subnet.snet.address_prefixes[0]
-#     dns_service_ip     = "10.0.0.10"
-#     load_balancer_sku  = "standard"
-#   }
-
-#   identity {
-#     type = "SystemAssigned"
-#   }
-
-#   tags = {
-#     Environment = "Production"
-#   }
-# }
 
