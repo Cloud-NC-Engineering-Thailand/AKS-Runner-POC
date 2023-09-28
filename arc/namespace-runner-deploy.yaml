@@ -1,7 +1,8 @@
 apiVersion: actions.summerwind.dev/v1alpha1
 kind: RunnerDeployment
 metadata:
-  name: repo-label-runner-deploy
+  name: namespace-runner-deploy
+  namespace: arc
 spec:
   replicas: 1
   template:
