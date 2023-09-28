@@ -1,0 +1,9 @@
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: RunnerDeployment
+metadata:
+  name: repo-many-replicas-runner-deploy
+spec:
+  replicas: 2
+  template:
+    spec:
+      repository: uoio1/aks_runner
