@@ -1,0 +1,18 @@
+name: Docker Workflow
+on:
+  push:
+    branches:
+      - master 
+
+jobs:
+  build:
+    runs-on: ["self-hosted","linux","test-linux"]
+
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v2 
+
+    - name: Build and Run Docker Container
+      run: |
+        docker build -t my-docker-image:latest .
+        docker run my-docker-image:latest
