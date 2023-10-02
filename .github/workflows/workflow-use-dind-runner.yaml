@@ -12,7 +12,5 @@ jobs:
     - name: Checkout Repo
       uses: actions/checkout@v2 
 
-    - name: Build and Run Docker Container
-      run: |
-        docker build -t my-docker-image:latest .
-        docker run my-docker-image:latest
+    - name: Echo Hello World
+      run: echo "hello world"
