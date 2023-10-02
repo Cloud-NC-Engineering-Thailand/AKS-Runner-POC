@@ -11,7 +11,8 @@ jobs:
     steps:
     - name: Checkout Repo
       uses: actions/checkout@v2 
-
+    - name: Echo Hello World
+      run: echo "hello world"
 
 
 
