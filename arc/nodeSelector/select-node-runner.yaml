@@ -1,0 +1,13 @@
+---
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: RunnerDeployment
+metadata:
+  name: select-node-runner
+spec:
+  template:
+    spec:
+      image: summerwind/actions-runner-dind
+      nodeSelector:
+        kubernetes.io/hostname: aks-default-42587076-vmss000002
+      repository: uoio1/aks_runner
+      
