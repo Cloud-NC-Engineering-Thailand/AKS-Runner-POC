@@ -17,6 +17,8 @@ jobs:
       run: docker ps
     - name: Build dockerfile
       run: docker build -t test-docker-image:latest .
+    - name: Docker images
+      run: docker images
   
 
 
