@@ -1,0 +1,27 @@
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: RunnerDeployment
+metadata:
+  name: repo-runner-autoscaler
+spec:
+  template:
+    spec:
+      repository: uoio1/aks_runner
+      labels:
+        - auto-scaler
+
+---
+
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: HorizontalRunnerAutoscaler
+metadata:
+  name: repo-runner-deploy-autoscaler
+spec:
+  scaleTargetRef:
+    kind: RunnerDeployment
+    name: repo-runner-deploy-2
+  minReplicas: 1
+  maxReplicas: 3
+  metrics:
+  - type: TotalNumberOfQueuedAndInProgressWorkflowRuns
+    repositoryNames:
+    - aks_runner
