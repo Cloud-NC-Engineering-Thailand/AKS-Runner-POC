@@ -16,6 +16,8 @@ jobs:
       - run: sudo apt update -y
       - name: Run a one-line script
         run: echo scale test 1 finished!
+      - name: delay
+        run: sleep 50
   scale-test2:
     runs-on: auto-scaler
     steps:
@@ -28,6 +30,8 @@ jobs:
       - run: sudo apt update -y
       - name: Run a one-line script
         run: echo scale test 2 finished!
+      - name: delay
+        run: sleep 50
   scale-test3:
     runs-on: auto-scaler
     steps:
@@ -40,3 +44,5 @@ jobs:
       - run: sudo apt update -y
       - name: Run a one-line script
         run: echo scale test 3 finished!
+      - name: delay
+        run: sleep 50
