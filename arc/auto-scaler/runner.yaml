@@ -18,7 +18,7 @@ metadata:
 spec:
   scaleTargetRef:
     kind: RunnerDeployment
-    name: repo-runner-deploy-2
+    name: repo-runner-autoscaler
   minReplicas: 1
   maxReplicas: 3
   metrics:
@@ -28,4 +28,3 @@ spec:
 
 
 
-    
