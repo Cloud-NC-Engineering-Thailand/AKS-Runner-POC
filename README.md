@@ -9,7 +9,7 @@
 - **GitHub Account:** Have a GitHub account with admin privileges for the repository where you want to set up the runner.
 
 
-**3. GitHub Personal Access Token** : can be generated on the Settings page of your GitHub account, under Developer settings > Personal access tokens.
+**3. GitHub Personal Access Token** : Can be generated on the Settings page of your GitHub account, under Developer settings > Personal access tokens.
 
 ## Part 1 Setting up AKS Cluster 
 1. Create AKS cluster 
