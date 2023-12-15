@@ -18,7 +18,7 @@
 az aks get-credentials --resource-group <resource-group-name> --name <aks-cluster-name>
 ```
 ## Part 2 Installing ARC on the Cluster 
-1. Create github token and run the following command, replacing ${GITHUB_TOKEN} with your GitHub token 
+1. Create github token and run the following command, replacing ${GITHUB_TOKEN} with your GitHub Personal Access Token 
 ```bash 
 kubectl create secret generic controller-manager --from-literal=github_token=${GITHUB_TOKEN}
 ```
