@@ -1,4 +1,16 @@
 # ARC Runner
+## Prerequisites 
+### Organization Runner
+
+- **GitHub Account:** Ensure that you have a GitHub account with owner privileges for the organization where you want to set up the runner.
+  
+### Repository Runner
+
+- **GitHub Account:** Have a GitHub account with admin privileges for the repository where you want to set up the runner.
+
+
+### GitHub Personal Access Token for ARC
+
 ## Part 1 Setting up AKS Cluster 
 1. Create AKS cluster 
 2. Connect to AKS in terminal
