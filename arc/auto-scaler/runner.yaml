@@ -24,7 +24,7 @@ spec:
   metrics:
   - type: TotalNumberOfQueuedAndInProgressWorkflowRuns
     repositoryNames:
-    - aks_runner
+    - uoio1/aks_runner
 
 
 
